@@ -418,7 +418,15 @@ body {
     }
 }
 
-
+.section-noire {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* Rajoute cet espace ici */
+}
 
 /* SECTION NOIRE  */
 .section-noire {
@@ -686,17 +694,6 @@ h4 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*academie full de kehs*/
 
 /*button de mort*/
@@ -727,6 +724,7 @@ h4 {
 .academy-btn:hover {
     transform: scale(1.05);
 }
+
 
 
 
