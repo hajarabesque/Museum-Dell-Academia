@@ -12,7 +12,7 @@
   }
 }
 
-.card, .actualites article, .galerie-item, .academy-card {
+.card, .actualites article, .galerie-item, .academy, .academy-card {
   view-timeline-name: --reveal;
   view-timeline-axis: block;
   
