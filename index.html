@@ -1,91 +1,290 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Museum</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Ruda:wght@400..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="/" class="nav-logo" aria-label="Accueil">
-        <img src="image/logo.png" alt="Logo" />
-      </a>
-      <div class="nav-links">
-        <a href="#visite">Visite</a>
-        <a href="#collections">Collections</a>
-        <a href="#expositions">Expositions</a>
-        <a href="#oeuvres">Oeuvres</a>
-        <a href="#evenement">Evenement</a>
-        <a href="#a-propos">À propos</a>
-        <a href="#ressources">Ressources</a>
-        <a href="#activites-pedagogiques">Activités pédagogiques</a>
-      </div>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
 
-      <div class="langage-switcher">
-        <details>
-          <summary id="lang-summary">Français</summary>
-          <div class="langage-switcher-menu">
-            <a href="Anglais">Anglais</a>
-            <a href="Français">Français</a>
-            <a href="Deutsch">Deutsch</a>
-            <a href="Italie">Italien</a>
-          </div>
-        </details>
-      </div>
+    <nav class="navbar">
+        <a href="/" class="nav-logo">
+            <img src="image/logo.png" alt="Logo" />
+        </a>
+        <div class="nav-links">
+            <p>visite</p>
+            <p>Collections</p>
+            <p>Expositions</p>
+            <p>Oeuvres</p>
+            <p>Evenement</p>
+            <p>À propos</p>
+            <p>Ressources</p>
+            <p>activites-pedagogiques</p>
+        </div>
+        <div class="langage-switcher">
+            <details>
+                <summary id="lang-summary">Français</summary>
+                <div class="langage-switcher-menu">
+                    <a href="#">Anglais</a>
+                    <a href="#">Français</a>
+                    <a href="#">Deutsch</a>
+                    <a href="#">Italien</a>
+                </div>
+            </details>
+        </div>
     </nav>
 
-      
-      <section class="hero">
+    <section class="hero">
         <img class="hero-img" src="image/David.jpg" alt="Main image" />
-         <div class="hero-overlay" aria-hidden="true"></div>
-      </section>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="texte-premier">
+                <h1>Galerie dell' Académie</h1>
+                <p>La galerie abrite le David de Michel-Ange tout comme une large collection de chefs-d'œuvre de la peinture, de la sculpture ainsi que des instruments de musique.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-outline">Réserver un billet</a>
+                <a href="#" class="btn btn-filled">Infos pratique</a>
+            </div>
+        </div>
+    </section>
 
-    <div class="texte-premier">
-        <h1> Galerie dell' Académie</h1>
-        <h2> La galerie abrite le David de Michel-Ange tout comme une large collection de chefs-d'œuvre de la peinture, de la sculpture ainsi que des instruments de musique.</h2>
+    <section class="title">
+        <h1>Actualités</h1>
+        <div class="slider">
+            <button class="arrow left">&#10094;</button>
+            <div class="actualites">
+                <article>
+                    <img src="image/Actualite1.jpg" alt="Actu 1">
+                    <p class="text-block date">30.09.2025</p>
+                    <p class="text-block description">Découvrez notre application web dédiée à Michel-Ange !</p>
+                    <p class="text-block invitation">Une expérience multimédia pour explorer les chefs-d’œuvre...</p>
+                </article>
+                <article>
+                    <img src="image/Actualite2.jpg" alt="Actu 2">
+                    <p class="text-block date">29.09.2025</p>
+                    <p class="text-block description">L’éternel contemporain. Interaction architecture et arts.</p>
+                    <p class="text-block invitation">Appel à contributions scientifiques prolongé.</p>
+                </article>
+                <article>
+                    <img src="image/Actualite3.jpg" alt="Actu 3">
+                    <p class="text-block date">11.09.2025</p>
+                    <p class="text-block description">Avis important à l’attention des visiteurs.</p>
+                    <p class="text-block invitation">Consignes concernant les objets interdits.</p>
+                </article>
+            </div>
+            <button class="arrow right">&#10095;</button>
+        </div>
+    </section>
 
+    <section class="section-noire">
+        <h1>Oeuvres</h1>
+        <div class="galerie-container">
+            <div class="galerie-item"><img src="image/1 tableau.png" class="img-1"></div>
+            <div class="galerie-item"><img src="image/2 tableau.png" class="img-2"></div>
+            <div class="galerie-item"><img src="image/3 tableau.png" class="img-3"></div>
+            <div class="galerie-item"><img src="image/4 tableau.png" class="img-4"></div>
+            <div class="galerie-item"><img src="image/5 tableau.png" class="img-5"></div>
+            <div class="galerie-item"><img src="image/6 tableau.png" class="img-6"></div>
+        </div>
+      <div class="galerie-button">
+    <a href="#" class="btn3 btn-filled">Découvrir plus</a>
+     </section>
+</div>
+
+
+
+<section class="container">
+    <h1>EXPOSITIONS & EVENEMENTS ACTUELLES</h1>
+
+
+    <div class="cards-grid">
+        <article class="card">
+            <div class="card-content">
+                <div class="text-top">
+                    <h4>VENUS ENTERING THE BATH BY LUIGI PAMPALONI</h4>
+                </div>
+                <div class="text-bottom">
+                    <p class="category">Exposition</p>
+                    <p class="date">04/11/2025 - 01/02/2026</p>
+                </div>
+            </div>
+            <div class="card-image">
+                <img src="image/Venere-che-entra-nel-bagno-del-mare.png" alt="Venus">
+            </div>
+        </article>
+
+
+        <article class="card">
+            <div class="card-content">
+                <div class="text-top">
+                    <h4>L'ETERNO CONTEMPORANEO MICHELANGELO 1475 - 2025</h4>
+                </div>
+                <div class="text-bottom">
+                    <p class="category">Evenement</p>
+                    <p class="date">03/03/2025 - 31/12/2025</p>
+                </div>
+            </div>
+            <div class="card-image">
+                <img src="image/vetements 30.png" alt="Michelangelo">
+            </div>
+        </article>
     </div>
-  
-    <section> 
-        <div class="galerie">
-        
 
 
-        </div>
-
-
-<section class="section-noire">
-    <h1>Oeuvres</h1>
-    
-    <div class="galerie-container">
-        <div class="galerie-item">
-            <img src="image/1 tableau.png" alt="tableau 1" class="img-1">
-        </div>
-        <div class="galerie-item">
-            <img src="image/2 tableau.png" alt="tableau 2" class="img-2">
-        </div>
-        <div class="galerie-item">
-            <img src="image/3 tableau.png" alt="tableau 3" class="img-3">
-        </div>
-        <div class="galerie-item">
-           <img src="image/4 tableau.png" alt="tableau 4" class="img-4">
-        </div>
-        <div class="galerie-item">
-            <img src="image/5 tableau.png" alt="tableau 5" class="img-5">
-        </div>
-        <div class="galerie-item">
-            <img src="image/6 tableau.png" alt="tableau 6" class="img-6">
-        </div>
-        
+    <div class="archives-links">
+        <a href="#">Archive des Expositions &rarr;</a>
+        <a href="#">Archive des Evenements &rarr;</a>
     </div>
 </section>
 
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="academy">
+  <h1 class="academy-title">ACCADEMIA EN LIGNE</h1>
+  <div class="academy-grid">
+    <div class="academy-image">
+      <img src="image/quaretto.png" alt="Quartetto">
+    </div>
+    <div class="card-text">
+      <h4>QUARTETTO</h4>
+      <p>
+        Un inno corale alla resilienza dell’arte per
+        raccontare la trasformazione della
+        Galleria dell’Accademia di Firenze.
+      </p>
+    </div>
+    <div class="academy-card dark">
+      <div class="card-text">
+        <h4>LE DAVID DE MICHEL-ANGE</h4>
+        <p>
+          Un viaggio dans les lois somptuaires et la
+          mode à Florence au XVIe siècle dans le
+          cadre magnifique de la bibliothèque de
+          l’Académie des Beaux-Arts.
+        </p>
+      </div>
+      <img src="image/le david.png" alt="David">
+    </div>
+    <div class="academy-card dark">
+      <div class="card-text">
+        <h4>VÊTEMENTS INTERDITS</h4>
+        <p>
+          La directrice Cécile Hollberg et la
+          restauratrice Eleonora Pucci nous
+          parlent du David, un symbole de la
+          Renaissance.
+        </p>
+      </div>
+      <img src="image/vetements 30.png" alt="Vêtements">
+    </div>
+  </div>
+<div class="academy-container">
+    <a href="#" class="academy-btn">Découvrir plus</a>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h5>Visite</h5>
+      <ul>
+        <li>Horaires</li>
+        <li>Tarifs</li>
+        <li>Rejoindre le musée</li>
+        <li>Visites guidées</li>
+        <li>Plan</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Œuvre</h5>
+      <ul>
+        <li>Peinture</li>
+        <li>Sculpture</li>
+        <li>Musique</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Expositions</h5>
+      <ul>
+        <li>Expositions</li>
+        <li>Archive des expositions</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Evenement</h5>
+      <ul>
+        <li>Evenements</li>
+        <li>Archive des evenements</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>À propos</h5>
+      <ul>
+        <li>Histoire</li>
+        <li>Qui sommes-nous</li>
+        <li>Les Amis de la Galleria</li>
+        <li>Publications</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Ressources</h5>
+      <ul>
+        <li>Aperçu</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Administration transparente</h5>
+    </div>
+    <div class="footer-col">
+      <h5>Statut</h5>
+    </div>
+    <div class="footer-col">
+      <h5>Privacy & Policy</h5>
+    </div>
+    <div class="footer-col">
+      <h5>Presse</h5>
+    </div>
+    <div class="footer-col">
+      <h5>Nous contacter</h5>
+    </div>
+    <div class="footer-brand">
+      <p class="footer-title">
+        Galleria<br>
+        Dell'Académia di<br>
+        Firenze
+      </p>
+    </div>
+    <div class="footer-social">
+      <h5 class="footer-line">Devenez amis</h5>
+      <div class="social-icons">
+        <img src="image/mdi_instagram.svg" alt="Instagram">
+        <img src="image/ri_facebook-fill.svg" alt="Facebook">
+        <img src="image/mdi_youtube.svg" alt="Youtube">                
+      </div>
+    </div>
+    <div class="footer-friends">
+      <h5 class="footer-line">Devenez amis</h5>
+      <a href="#">Retrouver tous nos avantages →</a>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
+
+
+
