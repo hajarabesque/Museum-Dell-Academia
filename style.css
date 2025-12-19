@@ -67,10 +67,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.nav-links:hover {
-    transform: scale(1.3);
-    display: flex;
-}
 
 @media (max-width:940){
   .navbar{
@@ -82,9 +78,6 @@ body {
 
 .nav-logo { position: absolute; left: 20px; top: 15px; }
 .nav-logo img { height: 120px; width: auto; }
-
-
-
 
 
 .nav-logo img {
@@ -107,6 +100,43 @@ body {
     background-color: white;
     display: block;
 }
+
+
+/* 1. On prépare le terrain pour le mot */
+.nav-links p, .nav-links a {
+    position: relative; /* Indispensable pour placer la barre en dessous */
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px; /* Petit espace pour que la barre ne colle pas aux lettres */
+    cursor: pointer;
+}
+
+/* 2. On crée la barre blanche invisible au repos */
+.nav-links p::after, .nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;         /* On part du milieu */
+    width: 0;          /* Largeur zéro au début */
+    height: 2px;       /* Épaisseur de ta barre */
+    background-color: white;
+    transition: all 0.3s ease; /* C'est ça qui fait l'effet de glisse */
+    transform: translateX(-50%); /* Pour que le "zéro" soit bien centré */
+}
+
+/* 3. L'effet au survol : la barre s'étire ! */
+.nav-links p:hover::after, .nav-links a:hover::after {
+    width: 100%;       /* Elle prend toute la largeur du mot */
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 980px) {
