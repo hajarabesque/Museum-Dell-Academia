@@ -25,19 +25,8 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 body {
-    margin: 0;
+    margin: 0; 
     font-family: 'Urbanist', sans-serif;
     background-color: #f9fafb;
     overflow-x: hidden;
@@ -293,14 +282,15 @@ body {
 }
 
 
-.texte-premier { color: #ffffff; max-width: 700px; }
+.texte-premier { color: #8c1d1d; max-width: 700px; }
 
 .texte-premier h1 { 
   text-align:left;
   font-family: 'Cinzel'; 
   font-size: 45px; 
   margin-bottom: 50px; 
-  font-weight: 400;
+ font-weight: 400;
+  text-decoration: underline;
  }
 
 
@@ -762,7 +752,6 @@ h4 {
 
 
 
-
 /*academie full de kehs*/
 
 /*button de mort*/
@@ -842,11 +831,6 @@ h4 {
 .card:hover {
     transform: scale(1.02);
 }
-
-
-
-
-
 
 
 
